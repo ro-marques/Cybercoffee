@@ -1,0 +1,33 @@
+h2 {
+  color: rgb(9, 12, 219);
+}
+body {
+  background-color: rgba(163, 196, 243, 0.356);
+  line-height: 100%;
+}
+a {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(90, 130, 189);
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(78, 64, 141);
+  text-align: center;
+}
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(114, 111, 111, 0.493);
+}

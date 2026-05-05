@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>🕹️Contate-nos</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a href="início.html">🕹️Home</a>
+    <h1>🕹️Contate-nos</h1>
+    <p>Estamos aqui para ajudar! Entre em contato conosco para reservas, qualquer dúvida ou feedback.</p>
+    <h2>Informações de Contato</h2>
+    <h3>Endereço</h3>
+    <p>📍 <i>Rua dos Programadores, 123 - Bairro Tech, Cidade Digital</i></p>
+    <p>📞 <i>Telefone: (xx) x xxxx-xxxx</i></p>
+    <p>✉️ <i>Email: contato@exemplo.com</i></p>
+    <p>🌐 <i>Site: www.cybercafeteria.com</i></p>
+    <p>🌐 <i>Instagram: @cybercafeteria</i></p>
+    <p>🌐 <i>Facebook: facebook.com/cybercafeteria</i></p>
+    <p>🌐 <i>Twitter: @cybercafeteria</i></p>
+    <p>🌐 <i>TikTok: @cybercafeteria</i></p>
+    </body>
+
+    <h1>Formulário de Contato</h1>
+    <fieldset>
+        <legend>Preencha o formulário</legend>
+    <form action="enviar_contato.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="assunto">Assunto:</label><br>
+        <select id="assunto" name="assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="reserva">Reserva</option>
+            <option value="duvida">Dúvida</option>
+            <option value="feedback">Feedback</option>
+        </select><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</html>
