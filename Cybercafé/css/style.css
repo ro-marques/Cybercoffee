@@ -1,33 +1,104 @@
-h2 {
-  color: rgb(9, 12, 219);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body {
-  background-color: rgba(163, 196, 243, 0.356);
-  line-height: 100%;
+body{
+  background-color: rgba(75, 54, 41, 0.322);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-a {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(90, 130, 189);
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-p {
-  font-family: "Courier New", Courier, monospace;
+main{
+  flex: zoom;
 }
-h1 {
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(78, 64, 141);
-  text-align: center;
+.low-opacity{
+  background-image: url(../gif/bg.gif); position: relative;
+  background-position: 30% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate;
 }
-h2 {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
+.low-opacity::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.37);
+  opacity:0.9;
 }
 
-h3 {
-  font-family: "Courier New", Courier, monospace;
+nav, a{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  transition: 0.3s;
+  color:aliceblue;
+  padding: 1rem;
+  
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+img{
+  border-radius:40%;
+}
+}
+.apresentação 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin:1px;
+  font-size: 2rem;
+  color:aliceblue;
+}
+.card{
+  background-image: url(../png/bg2.png); position: relative;
+  background-position: 30% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate; 
+  border-radius: 20px;
+  margin: 10px;
+  padding: 40px;
+}
+.card::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: rgb(241, 209, 255);
+  opacity:0.7;
+  border-radius: 20px;
+
+}
+.title{
+  margin: 0px;
+  padding: 7px;
+}
+fieldset{
+   background-color: rgba(247, 230, 255, 0.719);
+  border-radius: 20px;
+  padding: 10px;
+
 }
 footer {
+  padding: 5px;
+  color:aliceblue;
   text-align: center;
-  padding: 10px;
-  background-color: rgba(114, 111, 111, 0.493);
 }

@@ -1,47 +1,83 @@
+<!doctype html>
 <html>
-<head>
-    <title>🕹️Contate-nos</title>
+  <head>
+    <title>Contate-nos</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <a href="início.html">🕹️Home</a>
-    <h1>🕹️Contate-nos</h1>
-    <p>Estamos aqui para ajudar! Entre em contato conosco para reservas, qualquer dúvida ou feedback.</p>
-    <h2>Informações de Contato</h2>
-    <h3>Endereço</h3>
-    <p>📍 <i>Rua dos Programadores, 123 - Bairro Tech, Cidade Digital</i></p>
-    <p>📞 <i>Telefone: (xx) x xxxx-xxxx</i></p>
-    <p>✉️ <i>Email: contato@exemplo.com</i></p>
-    <p>🌐 <i>Site: www.cybercafeteria.com</i></p>
-    <p>🌐 <i>Instagram: @cybercafeteria</i></p>
-    <p>🌐 <i>Facebook: facebook.com/cybercafeteria</i></p>
-    <p>🌐 <i>Twitter: @cybercafeteria</i></p>
-    <p>🌐 <i>TikTok: @cybercafeteria</i></p>
-    </body>
+    <header>
+      <nav class="low-opacity">
+      <a href="início.html"><img src="../gif/icone.gif" width="45" height="45" alt="Ícone"/>Início</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="sobre.html"><img src="../gif/icone.gif" width="45" height="45" alt="Ícone"/>Sobre Nós</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="serviços-produtos.html"><img src="../gif/icone.gif" width="45" height="45" alt="Ícone"/>Serviços e Produtos</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="planos-preços.html"><img src="../gif/icone.gif" width="45" height="45" alt="Ícone"/>Planos</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="contato.html"><img src="../gif/icone.gif" width="45" height="45" alt="Ícone"/>Contato</a>
+    </nav>
+    </header>
+    <main>
+      <div class="title">
+      <h2> <img src="../gif/contato.gif" width="100px" alt="" >Contate-nos...</h2>
+      </div>
+      <section class="card">
+        <h3>Tem alguma dúvida, sugestão ou precisa de ajuda? Nossa equipe está pronta para atender você! </h3>
+        <p>Entre em contato para saber mais sobre nossos serviços, horários, reservas para jogos, uso dos computadores ou eventos especiais.</p><br/>
+        <fieldset>
+          <legend><h2>Dados para contato</h2></legend>
+          <p><i><strong>Endereço:</strong> Rua dos Programadores, 123 - Bairro Tech, Cidade Digital</i></p>
+          <p><i><strong>Telefone:</strong> (xx) x xxxx-xxxx</i></p>
+          <p><i><strong>Email:</strong> contato@exemplo.com</i></p>
+          <p><i><strong>Site:</strong> www.cybercafeteria.com </i></p>
+          <p><i><strong>Instagram:</strong> @cybercafeteria</i></p>
+          <p><i><strong>Facebook:</strong> facebook.com/cybercafeteria</i></p>
+          <p><i><strong>Twitter:</strong> @cybercafeteria</i></p>
+          <p><i><strong>TikTok:</strong> @cybercafeteria</i></p><br><br>
+        </fieldset> <br>
+        
+        <h3>Sua opinião é muito importante para nós...</h3><br>
+        
+        <fieldset>
+        <legend><h1>Formulário</h1></legend>
+        <form action="#" method="post" class="form-contato">
+    
+    <div class="campo">
+      <label for="nome">Nome*</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+    </div>
 
-    <h1>Formulário de Contato</h1>
-    <fieldset>
-        <legend>Preencha o formulário</legend>
-    <form action="enviar_contato.php" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <div class="campo">
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+    </div>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+    <div class="campo">
+      <label for="telefone">Telefone*</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+    </div>
 
-        <label for="assunto">Assunto:</label><br>
-        <select id="assunto" name="assunto" required>
-            <option value="">Selecione um assunto</option>
-            <option value="reserva">Reserva</option>
-            <option value="duvida">Dúvida</option>
-            <option value="feedback">Feedback</option>
-        </select><br><br>
+    <div class="campo">
+      <label for="assunto">Assunto*</label>
+      <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
+    </div>
+<br>
+    <div class="campo">
+      <label for="mensagem">Mensagem</label><br>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+    </div>
 
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea><br><br>
+    <button type="submit">Enviar Mensagem</button>
 
-        <input type="submit" value="Enviar">
-    </fieldset>
-    </form>
+  </form>
+</section>
+
+      </fieldset>
+      </section>
+      
+  </main>
+  <footer class="low-opacity">
+    <p>
+      <strong>© 2024 Cyber Cafeteria. Todos os direitos reservados.</strong>
+    </p>
+  </footer>
+  </body>
 </html>
